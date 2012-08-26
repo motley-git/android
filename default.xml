@@ -5,6 +5,8 @@
            fetch="https://android.googlesource.com/" />
   <remote  name="github"
            fetch="https://github.com/" />
+  <remote  name="eos"
+           fetch="git://git.teameos.org/" />
   <default revision="refs/tags/android-4.1.1_r4"
            remote="aosp"
            sync-j="4" />
@@ -298,8 +300,8 @@
   <project path="system/security" name="platform/system/security" />
   <project path="system/vold" name="platform/system/vold" />
   <project path="vendor/samsung" name="motley-git/platform_vendor_samsung" remote="github" revision="jb" />
-  <project path="system/su" name="CyanogenMod/android_system_su.git" remote="github" revision="jellybean" />
-  <project path="packages/apps/Superuser" name="ChainsDD/Superuser.git" remote="github" revision="master" />
-  <project path="external/busybox" name="Gnurou/busybox-android.git" remote="github" revision="master" />
+  <project path="system/su" name="eos/platform/external/su.git" remote="eos" revision="jellybean" />
+  <project path="packages/apps/Superuser" name="eos/platform/packages/apps/Superuser/Superuser.git" remote="eos" revision="jellybean" />
+  <project path="external/busybox" name="eos/platform/external/busybox/busybox.git" remote="eos" revision="jellybean" />
 
 </manifest>
